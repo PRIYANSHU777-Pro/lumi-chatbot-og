@@ -10,8 +10,7 @@ app = Flask(__name__)
 
 # ✅ Set up your OpenRouter key and base_url
 client = OpenAI(
-    client = OpenAI(api_key=os.getenv("OPENROUTER_API_KEY"))
-,
+    api_key=os.getenv("OPENROUTER_API_KEY"),
     base_url="https://openrouter.ai/api/v1"
 )
 
